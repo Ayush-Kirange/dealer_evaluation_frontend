@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #243247;
+    background: #f5f7fa;
+}
+.navbar {
+    background: #152b46;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.brand {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 24px;
+}
+.nav-links a.active {
+    color: #ffd166;
+    font-weight: bold;
+}
+.hero {
+    padding: 55px 8%;
+    background: #e5edf5;
+}
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+.container {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 22px;
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #00000012;
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+.card h2 {
+    margin: 0 0 8px;
+}
+.role {
+    color: #2864a5;
+    font-weight: bold;
+}
+a {
+    color: #185da8;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid #2864a5;
+}
+footer {
+    margin-top: 45px;
+    padding: 22px;
+    text-align: center;
+    background: #152b46;
+    color: white;
+}
+@media (max-width: 600px) {
+    .navbar { gap: 14px; }
+    .nav-links a { margin: 0 12px 0 0; }
+    .hero h1 { font-size: 30px; }
+}
